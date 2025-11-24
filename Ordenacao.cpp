@@ -1,4 +1,5 @@
 #include "Ordenacao.hpp"
+#include <chrono>
 
 long long Ordenacao::trocas = 0;
 long Ordenacao::comparacoes = 0;

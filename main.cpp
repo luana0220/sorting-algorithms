@@ -71,7 +71,7 @@ int main()
             std::cout << num << " ";
         }
         std::cout << std::endl;
-    }*/
+    }
 
     std::vector<int> vt = {5,1,2,3,9,4};
     Ordenacao::medirTempo(Ordenacao::bubbleSort, vt);
@@ -82,6 +82,6 @@ int main()
     std::vector<int> vc = {1,2,3,4,5,6};
     Ordenacao::medirTempo(Ordenacao::bubbleSort, vc);
     std::cout << "Trocas: " << Ordenacao::getTrocas() << std::endl;
-    Gerenciador::executarTestes();
+    Gerenciador::executarTestes();*/
     return 0;
 }
