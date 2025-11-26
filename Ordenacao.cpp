@@ -93,31 +93,41 @@ void Ordenacao::bubbleSort(std::vector<int> &vec)
 void Ordenacao::insertionSort(std::vector<int> &vec)
 {
     int tam = vec.size();
+
     for (int i = 1; i < tam; i++)
     {
         int chave = vec[i];
         int j = i - 1;
-        comparacoes += 2;
+
+        // Comparação que entra no while (j >= 0)
+        comparacoes++;
+
         while (j >= 0 && vec[j] > chave)
         {
+            // Comparação vec[j] > chave
+            comparacoes++;
+
+            // Deslocamento NÃO é troca
             vec[j + 1] = vec[j];
-            trocas++;
+
             j--;
+
+            // Nova comparação j>=0 para repetir o while
+            comparacoes++;
         }
-        
+
+        // Coloca o elemento na posição correta (não é troca)
         vec[j + 1] = chave;
-        trocas++;
     }
 }
 
 //função para medir tempo de execução
-long long Ordenacao::medirTempo(std::function<void(std::vector<int>&)> funcaoOrdenacao, std::vector<int>& vec)
+void  Ordenacao::medirTempo(std::function<void(std::vector<int>&)> funcaoOrdenacao, std::vector<int>& vec)
 {
     auto inicio = std::chrono::high_resolution_clock::now();
     funcaoOrdenacao(vec);
     auto fim = std::chrono::high_resolution_clock::now();
     tempoExecucao = std::chrono::duration_cast<std::chrono::microseconds>(fim - inicio).count();
-    return tempoExecucao;
 }
 
 //quick Sort Hoare - métodos privados
@@ -138,8 +148,9 @@ int Ordenacao::particionaHoare(std::vector<int>& vec, int inicio, int fim)
             j--;
             comparacoes++; 
         } while (vec[j] > pivo);
-        if (i >= j)
+        if (i >= j) {
             return j;
+        }
         troca(vec[i], vec[j]);
     }
 }

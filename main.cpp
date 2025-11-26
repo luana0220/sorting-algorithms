@@ -83,5 +83,7 @@ int main()
     Ordenacao::medirTempo(Ordenacao::bubbleSort, vc);
     std::cout << "Trocas: " << Ordenacao::getTrocas() << std::endl;
     Gerenciador::executarTestes();*/
+    Gerenciador ordenar;
+    ordenar.executarTestes();
     return 0;
 }
