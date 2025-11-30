@@ -1,100 +1,104 @@
-Cenario, Algoritmo, trocas, comparações, tempo
+Cenario, Tamanho,  Algoritmo, trocas, comparações, tempo
 Vetor Ordenado,10,Bubble Sort,0,9,0
 Vetor Ordenado,10,Insertion Sort,0,18,0
 Vetor Ordenado,10,Selection Sort,0,45,0
 Vetor Ordenado,10,Quick Sort Lomuto,0,45,0
 Vetor Ordenado,10,Quick Sort Hoare,0,63,0
 Vetor Ordenado,10,Merge Sort,0,19,0
-Vetores Inversamente Ordenados,10,Bubble Sort,0,45,0
-Vetores Inversamente Ordenados,10,Insertion Sort,0,18,0
-Vetores Inversamente Ordenados,10,Selection Sort,0,45,0
-Vetores Inversamente Ordenados,10,Quick Sort Lomuto,0,45,0
-Vetores Inversamente Ordenados,10,Quick Sort Hoare,0,68,0
-Vetores Inversamente Ordenados,10,Merge Sort,0,15,0
-Vetores aleatórios,10,Bubble Sort,20.4,40.9,0
-Vetores aleatórios,10,Insertion Sort,29.4,18,0
-Vetores aleatórios,10,Selection Sort,6.8,45,0
-Vetores aleatórios,10,Quick Sort Lomuto,22.6,26.3,0
-Vetores aleatórios,10,Quick Sort Hoare,9.8,55,0
-Vetores aleatórios,10,Merge Sort,68,21.8,0
-Vetores quase ordenado,9,Bubble Sort,4,20.7,0
-Vetores quase ordenado,9,Insertion Sort,12,16,0
-Vetores quase ordenado,9,Selection Sort,1.2,36,0
-Vetores quase ordenado,9,Quick Sort Lomuto,36.3,31.1,0
-Vetores quase ordenado,9,Quick Sort Hoare,1.2,49.9,0
-Vetores quase ordenado,9,Merge Sort,58,17.1,0
+Vetor Inversamente Ordenado,10,Bubble Sort,45,45,0
+Vetor Inversamente Ordenado,10,Insertion Sort,45,18,0
+Vetor Inversamente Ordenado,10,Selection Sort,5,45,0
+Vetor Inversamente Ordenado,10,Quick Sort Lomuto,5,45,0
+Vetor Inversamente Ordenado,10,Quick Sort Hoare,5,68,0
+Vetor Inversamente Ordenado,10,Merge Sort,0,15,0
+Vetor aleatório,10,Bubble Sort,20.4,40.9,0
+Vetor aleatório,10,Insertion Sort,20.4,18,0
+Vetor aleatório,10,Selection Sort,6.8,45,0
+Vetor aleatório,10,Quick Sort Lomuto,8.5,26.3,0
+Vetor aleatório,10,Quick Sort Hoare,9.8,55,0
+Vetor aleatório,10,Merge Sort,0,21.8,0
+Vetor quase ordenado,9,Bubble Sort,4,20.7,0
+Vetor quase ordenado,9,Insertion Sort,4,16,14.98
+Vetor quase ordenado,9,Selection Sort,1.2,36,0
+Vetor quase ordenado,9,Quick Sort Lomuto,1.2,31.1,0
+Vetor quase ordenado,9,Quick Sort Hoare,1.2,49.9,0
+Vetor quase ordenado,9,Merge Sort,0,17.1,0
 Vetor Ordenado,100,Bubble Sort,0,99,0
 Vetor Ordenado,100,Insertion Sort,0,198,0
-Vetor Ordenado,100,Selection Sort,0,4950,0
+Vetor Ordenado,100,Selection Sort,0,4950,81.6
 Vetor Ordenado,100,Quick Sort Lomuto,0,4950,0
 Vetor Ordenado,100,Quick Sort Hoare,0,5148,0
-Vetor Ordenado,100,Merge Sort,0,356,0
-Vetores Inversamente Ordenados,100,Bubble Sort,338.3,4950,338.3
-Vetores Inversamente Ordenados,100,Insertion Sort,0,198,0
-Vetores Inversamente Ordenados,100,Selection Sort,0,4950,0
-Vetores Inversamente Ordenados,100,Quick Sort Lomuto,0,4950,0
-Vetores Inversamente Ordenados,100,Quick Sort Hoare,0,5198,0
-Vetores Inversamente Ordenados,100,Merge Sort,0,316,0
-Vetores aleatórios,100,Bubble Sort,2362.6,4874,0
-Vetores aleatórios,100,Insertion Sort,2461.6,198,0
-Vetores aleatórios,100,Selection Sort,92.7,4950,156.56
-Vetores aleatórios,100,Quick Sort Lomuto,377,615.9,0
-Vetores aleatórios,100,Quick Sort Hoare,169.4,1040.2,0
-Vetores aleatórios,100,Merge Sort,1344,542.3,0
-Vetores quase ordenado,99,Bubble Sort,520.7,4605.8,0
-Vetores quase ordenado,99,Insertion Sort,618.7,196,0
-Vetores quase ordenado,99,Selection Sort,13.7,4851,157.82
-Vetores quase ordenado,99,Quick Sort Lomuto,1150.8,1793.8,0
-Vetores quase ordenado,99,Quick Sort Hoare,22.2,1756.9,0
-Vetores quase ordenado,99,Merge Sort,1328,475.6,0
+Vetor Ordenado,100,Merge Sort,0,356,100
+Vetor Inversamente Ordenado,100,Bubble Sort,4950,4950,0
+Vetor Inversamente Ordenado,100,Insertion Sort,4950,198,0
+Vetor Inversamente Ordenado,100,Selection Sort,50,4950,78.6
+Vetor Inversamente Ordenado,100,Quick Sort Lomuto,50,4950,0
+Vetor Inversamente Ordenado,100,Quick Sort Hoare,50,5198,58.6
+Vetor Inversamente Ordenado,100,Merge Sort,0,316,100
+Vetor aleatório,100,Bubble Sort,2362.6,4874,49.29
+Vetor aleatório,100,Insertion Sort,2362.6,198,12.43
+Vetor aleatório,100,Selection Sort,92.7,4950,30.54
+Vetor aleatório,100,Quick Sort Lomuto,246.8,615.9,13.93
+Vetor aleatório,100,Quick Sort Hoare,169.4,1040.2,0
+Vetor aleatório,100,Merge Sort,0,542.3,41.1
+Vetor quase ordenado,99,Bubble Sort,520.7,4605.8,20.2
+Vetor quase ordenado,99,Insertion Sort,520.7,196,0
+Vetor quase ordenado,99,Selection Sort,13.7,4851,30.76
+Vetor quase ordenado,99,Quick Sort Lomuto,128.7,1793.8,12.09
+Vetor quase ordenado,99,Quick Sort Hoare,22.2,1756.9,14.61
+Vetor quase ordenado,99,Merge Sort,0,475.6,42.97
 Vetor Ordenado,1000,Bubble Sort,0,999,0
 Vetor Ordenado,1000,Insertion Sort,0,1998,0
-Vetor Ordenado,1000,Selection Sort,3171.4,499500,3171.4
-Vetor Ordenado,1000,Quick Sort Lomuto,3181.5,499500,3181.5
-Vetor Ordenado,1000,Quick Sort Hoare,1586.9,501498,1586.9
-Vetor Ordenado,1000,Merge Sort,0,5044,0
-Vetores Inversamente Ordenados,1000,Bubble Sort,6346.3,499500,6346.3
-Vetores Inversamente Ordenados,1000,Insertion Sort,3465.4,1998,3465.4
-Vetores Inversamente Ordenados,1000,Selection Sort,1344.6,499500,1344.6
-Vetores Inversamente Ordenados,1000,Quick Sort Lomuto,3140.2,499500,3140.2
-Vetores Inversamente Ordenados,1000,Quick Sort Hoare,1617.8,501998,1617.8
-Vetores Inversamente Ordenados,1000,Merge Sort,0,4932,0
-Vetores aleatórios,1000,Bubble Sort,249633,498629,3979.32
-Vetores aleatórios,1000,Insertion Sort,250632,1998,1586.54
-Vetores aleatórios,1000,Selection Sort,991.3,499500,2369.14
-Vetores aleatórios,1000,Quick Sort Lomuto,6492.3,11150.6,0
-Vetores aleatórios,1000,Quick Sort Hoare,2489.8,15152.8,198.22
-Vetores aleatórios,1000,Merge Sort,19952,8701,371.2
-Vetores quase ordenado,999,Bubble Sort,57627,488327,2849.19
-Vetores quase ordenado,999,Insertion Sort,58625,1996,321.29
-Vetores quase ordenado,999,Selection Sort,124.4,498501,2148.64
-Vetores quase ordenado,999,Quick Sort Lomuto,13839.2,21201.9,74.39
-Vetores quase ordenado,999,Quick Sort Hoare,342.4,25308.2,158.74
-Vetores quase ordenado,999,Merge Sort,19930,8038.7,322.19
-Vetor Ordenado,10000,Bubble Sort,0,9999,0
-Vetor Ordenado,10000,Insertion Sort,0,19998,0
-Vetor Ordenado,10000,Selection Sort,217404,4.9995e+007,217404
-Vetor Ordenado,10000,Quick Sort Lomuto,374790,4.9995e+007,374790
-Vetor Ordenado,10000,Quick Sort Hoare,115981,5.0015e+007,115981
-Vetor Ordenado,10000,Merge Sort,4986.3,69008,4986.3
-Vetores Inversamente Ordenados,10000,Bubble Sort,486108,4.9995e+007,486108
-Vetores Inversamente Ordenados,10000,Insertion Sort,316911,19998,316911
-Vetores Inversamente Ordenados,10000,Selection Sort,209174,4.9995e+007,209174
-Vetores Inversamente Ordenados,10000,Quick Sort Lomuto,242873,4.9995e+007,242873
-Vetores Inversamente Ordenados,10000,Quick Sort Hoare,114809,5.002e+007,114809
-Vetores Inversamente Ordenados,10000,Merge Sort,4729.6,64608,4729.6
-Vetores aleatórios,10000,Bubble Sort,2.49903e+007,4.99888e+007,448321
-Vetores aleatórios,10000,Insertion Sort,2.50003e+007,19998,158680
-Vetores aleatórios,10000,Selection Sort,9989.8,4.9995e+007,214357
-Vetores aleatórios,10000,Quick Sort Lomuto,88511.6,156185,1427.7
-Vetores aleatórios,10000,Quick Sort Hoare,32485.8,208515,1383.74
-Vetores aleatórios,10000,Merge Sort,267232,120451,4799.48
-Vetores quase ordenado,9999,Bubble Sort,5.76939e+006,4.99174e+007,270878
-Vetores quase ordenado,9999,Insertion Sort,5.77939e+006,19996,37436.3
-Vetores quase ordenado,9999,Selection Sort,2746.5,4.9985e+007,213863
-Vetores quase ordenado,9999,Quick Sort Lomuto,177653,316814,1907.4
-Vetores quase ordenado,9999,Quick Sort Hoare,6157.2,420626,1394.15
-Vetores quase ordenado,9999,Merge Sort,267202,115332,4299.34
-Vetor Ordenado,100000,Bubble Sort,0,99999,0
-Vetor Ordenado,100000,Insertion Sort,1607.4,199998,1607.4
-Vetor Ordenado,100000,Selection Sort,2.16719e+007,7.04983e+008,2.16719e+007
+Vetor Ordenado,1000,Selection Sort,0,499500,1857.3
+Vetor Ordenado,1000,Quick Sort Lomuto,0,499500,580.6
+Vetor Ordenado,1000,Quick Sort Hoare,0,501498,1694.7
+Vetor Ordenado,1000,Merge Sort,0,5044,1258.1
+Vetor Inversamente Ordenado,1000,Bubble Sort,499500,499500,4892.1
+Vetor Inversamente Ordenado,1000,Insertion Sort,499500,1998,4534.8
+Vetor Inversamente Ordenado,1000,Selection Sort,500,499500,2560.4
+Vetor Inversamente Ordenado,1000,Quick Sort Lomuto,500,499500,1537.1
+Vetor Inversamente Ordenado,1000,Quick Sort Hoare,500,501998,1301
+Vetor Inversamente Ordenado,1000,Merge Sort,0,4932,439.5
+Vetor aleatório,1000,Bubble Sort,249633,498629,4650.71
+Vetor aleatório,1000,Insertion Sort,249633,1998,2206.07
+Vetor aleatório,1000,Selection Sort,991.3,499500,2364.84
+Vetor aleatório,1000,Quick Sort Lomuto,4945,11150.6,160.17
+Vetor aleatório,1000,Quick Sort Hoare,2489.8,15152.8,0
+Vetor aleatório,1000,Merge Sort,0,8701,561.27
+Vetor quase ordenado,999,Bubble Sort,57627,488327,3044.44
+Vetor quase ordenado,999,Insertion Sort,57627,1996,531.72
+Vetor quase ordenado,999,Selection Sort,124.4,498501,2375.88
+Vetor quase ordenado,999,Quick Sort Lomuto,3389.8,21201.9,92.32
+Vetor quase ordenado,999,Quick Sort Hoare,342.4,25308.2,150.36
+Vetor quase ordenado,999,Merge Sort,0,8038.7,479.46
+Vetor Ordenado,10000,Bubble Sort,0,9999,150.1
+Vetor Ordenado,10000,Insertion Sort,0,19998,113.1
+Vetor Ordenado,10000,Selection Sort,0,4.9995e+007,277507
+Vetor Ordenado,10000,Quick Sort Lomuto,0,4.9995e+007,150575
+Vetor Ordenado,10000,Quick Sort Hoare,0,5.0015e+007,186663
+Vetor Ordenado,10000,Merge Sort,0,69008,5882.6
+Vetor Inversamente Ordenado,10000,Bubble Sort,4.9995e+007,4.9995e+007,618279
+Vetor Inversamente Ordenado,10000,Insertion Sort,4.9995e+007,19998,417344
+Vetor Inversamente Ordenado,10000,Selection Sort,5000,4.9995e+007,287243
+Vetor Inversamente Ordenado,10000,Quick Sort Lomuto,5000,4.9995e+007,191279
+Vetor Inversamente Ordenado,10000,Quick Sort Hoare,5000,5.002e+007,173337
+Vetor Inversamente Ordenado,10000,Merge Sort,0,64608,8061.6
+Vetor aleatório,10000,Bubble Sort,2.49903e+007,4.99888e+007,625372
+Vetor aleatório,10000,Insertion Sort,2.49903e+007,19998,219219
+Vetor aleatório,10000,Selection Sort,9989.8,4.9995e+007,279962
+Vetor aleatório,10000,Quick Sort Lomuto,73019,156185,1406.11
+Vetor aleatório,10000,Quick Sort Hoare,32485.8,208515,1315.57
+Vetor aleatório,10000,Merge Sort,0,120451,5271.53
+Vetor quase ordenado,9999,Bubble Sort,5.76939e+006,4.99174e+007,368459
+Vetor quase ordenado,9999,Insertion Sort,5.76939e+006,19996,50358.3
+Vetor quase ordenado,9999,Selection Sort,2746.5,4.9985e+007,273843
+Vetor quase ordenado,9999,Quick Sort Lomuto,51511.3,316814,1840.44
+Vetor quase ordenado,9999,Quick Sort Hoare,6157.2,420626,1488.75
+Vetor quase ordenado,9999,Merge Sort,0,115332,6018.46
+Vetor Ordenado,100000,Bubble Sort,0,99999,680.6
+Vetor Ordenado,100000,Insertion Sort,0,199998,657.7
+Vetor Ordenado,100000,Selection Sort,0,7.04983e+008,2.25137e+007
+Vetor Ordenado,100000,Merge Sort,0,853904,46992.1
+Vetor Inversamente Ordenado,100000,Bubble Sort,4.99995e+009,7.04983e+008,4.95094e+007
+Vetor Inversamente Ordenado,100000,Insertion Sort,4.99995e+009,199998,3.20989e+007
+Vetor Inversamente Ordenado,100000,Selection Sort,50000,7.04983e+008,2.16573e+007

@@ -50,6 +50,8 @@ class Gerenciador
 public:
     // função geral para executar testes
     void executarTestes(const std::string& nomeArq);
+    
+void testarAlgoritmoEmCenario(const std::function<void(std::vector<int>&)> &algoritmo,const std::string &nomeAlgoritmo,int tam, const std::string &cenario);
 };
 
 #endif

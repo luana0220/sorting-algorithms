@@ -26,10 +26,14 @@ int Ordenacao::particionaLomuto(std::vector<int> &vec, int inicio, int fim)
         if (vec[j] <= pivo) // troca se o elemento for menor ou igual ao pivô
         {
             i++;
-            troca(vec[i], vec[j]);
+            if( i != j) {
+                troca(vec[i], vec[j]);
+            }
+            
         }
     }
-    troca(vec[i + 1], vec[fim]);
+    if (i + 1 != fim)
+        troca(vec[i + 1], vec[fim]); // evita troca final inútil
     return i + 1;
 }
 
@@ -109,7 +113,6 @@ void Ordenacao::insertionSort(std::vector<int> &vec)
             j--;
         }
         vec[j + 1] = chave;
-        trocas++;
     }
 }
 void Ordenacao::merge(std::vector<int> &vec, int esq, int meio, int dir)
@@ -247,3 +250,4 @@ void Ordenacao::zerarDados()
     comparacoes = 0;
     tempoExecucao = 0;
 }
+
