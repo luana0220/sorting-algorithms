@@ -16,7 +16,7 @@ std::vector<std::vector<int>> Gerenciador::gerarVetorDeVetores(int tam, std::fun
     return vetorDeVetores;
 }
 
-void Gerenciador::rodar10vzsMesmoVetor(std::function<void(std::vector<int> &vec)> ordenacao, std::vector<int> vetor, const std::string &cenario, const std::string &algoritmo)
+void Gerenciador::rodar10vzsMesmoVetor(std::function<void(std::vector<int> &vec)> ordenacao, const std::vector<int>& vetor, const std::string &cenario, const std::string &algoritmo)
 {
     int tam = vetor.size();
     // variaveis para acumular os valores de tempo, comparações e trocas de cada execução
@@ -40,7 +40,7 @@ void Gerenciador::rodar10vzsMesmoVetor(std::function<void(std::vector<int> &vec)
     escrever(algoritmo, cenario, somaTrocas / 10, somaComparacoes / 10, somaTempos / 10, tam);
 }
 
-void Gerenciador::rodar10vzsVetorAleatorio(std::function<void(std::vector<int> &vec)> ordenacao, std::vector<int> vetor, double &mediaTrocas, double &mediaComp, double &mediaTempo)
+void Gerenciador::rodar10vzsVetorAleatorio(std::function<void(std::vector<int> &vec)> ordenacao, const std::vector<int>& vetor, double &mediaTrocas, double &mediaComp, double &mediaTempo)
 {
     double somaTrocas = 0.0;
     double somaComparacoes = 0.0;
@@ -62,7 +62,7 @@ void Gerenciador::rodar10vzsVetorAleatorio(std::function<void(std::vector<int> &
     mediaTempo = somaTempo / 10.0;
 }
 
-void Gerenciador::testarVetoresAleatorios(std::function<void(std::vector<int> &vec)> ordenacao, std::vector<std::vector<int>> vetor, const std::string &cenario, const std::string &algoritmo)
+void Gerenciador::testarVetoresAleatorios(std::function<void(std::vector<int> &vec)> ordenacao, const std::vector<std::vector<int>>& vetor, const std::string &cenario, const std::string &algoritmo)
 {
     int tam = vetor[0].size();
     double somaMediasTrocas = 0.0;

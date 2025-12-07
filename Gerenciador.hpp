@@ -21,14 +21,14 @@ class Gerenciador
 
     // a função executa um mesmo vetor 10 vezes, aramazena a média das trocas, tempo de execução e comparações nos contadores da classe Ordenação e imprime
     //OBS: vai ser utilizada apenas para vetores ordenados e inversamente ordenados
-    void rodar10vzsMesmoVetor(std::function<void(std::vector<int> &vec)> ordenacao, std::vector<int> vetor, const std::string& cenario, const std::string& algoritmo);
+    void rodar10vzsMesmoVetor(std::function<void(std::vector<int> &vec)> ordenacao, const std::vector<int>& vetor, const std::string& cenario, const std::string& algoritmo);
 
     // retorna um vetor de vetores para testar cada um na função rodar10vzsVetorAleatorio(...)
     std::vector<std::vector<int>> gerarVetorDeVetores(int tam, std::function<std::vector<int>(int tam)> gerarVetor);
-    void testarVetoresAleatorios(std::function<void(std::vector<int> &vec)> ordenacao, std::vector<std::vector<int>> vetor, const std::string& cenario, const std::string& algoritmo);
+    void testarVetoresAleatorios(std::function<void(std::vector<int> &vec)> ordenacao, const std::vector<std::vector<int>>& vetor, const std::string& cenario, const std::string& algoritmo);
 
     //função que recebe um vetor de vetores aleatórios e executa o algoritmo 10 vzs para cada vetor e incrementa as médias passadas por referência
-    void rodar10vzsVetorAleatorio(std::function<void(std::vector<int> &vec)> ordenacao, std::vector<int> vetor, double& mediaTrocas, double& mediaComp, double& mediaTempo);
+    void rodar10vzsVetorAleatorio(std::function<void(std::vector<int> &vec)> ordenacao, const std::vector<int>& vetor, double& mediaTrocas, double& mediaComp, double& mediaTempo);
 
    //manipula o arquivo  de resultados
     static void escrever(const std::string& algoritmo, const std::string& cenario, double trocas, double comparacoes, double tempo, int tam);
