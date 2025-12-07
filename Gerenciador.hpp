@@ -34,12 +34,12 @@ class Gerenciador
     static void escrever(const std::string& algoritmo, const std::string& cenario, double trocas, double comparacoes, double tempo, int tam);
     static void abrirArq(const std::string& nomeArq);
     static void fecharArq();
+    // função para testar um algoritmo em um cenário especifíco
+    void testarAlgoritmoEmCenario(const std::function<void(std::vector<int>&)> &algoritmo,const std::string &nomeAlgoritmo,int tam, const std::string &cenario);
 public:
     // função geral para executar testes
     void executarTestes(const std::string& nomeArq);
-    // função para testar um algoritmo em um cenário especifíco
-    //OBS: a função precisa ser pública para depois os cenários que geraram stack overflow possam ser testados manualmente
-    void testarAlgoritmoEmCenario(const std::function<void(std::vector<int>&)> &algoritmo,const std::string &nomeAlgoritmo,int tam, const std::string &cenario);
+
 };
 
 #endif

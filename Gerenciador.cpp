@@ -120,6 +120,10 @@ void Gerenciador::executarTestes(const std::string &nomeArq)
     int tam = 10;
     while (tam <= 100000)
     {
+        vetorOrdenado = GeradorVetor::gerarVetorCrescente(tam);
+        vetorInverso = GeradorVetor::gerarVetorDecrescente(tam);
+        vetoresAleatorios = gerarVetorDeVetores(tam, GeradorVetor::gerarVetorAleatorio);
+        vetoresQuaseOrd = gerarVetorDeVetores(tam, GeradorVetor::gerarVetorQuaseOrdenado);
 
         for (int i = 0; i < nomesAlgoritmos.size(); i++)
         {
@@ -146,6 +150,10 @@ void Gerenciador::executarTestes(const std::string &nomeArq)
     std::cout << "         TESTES SEPARADOS PARA VETORES QUE GERARAM STACK OVERFLOW\n";
     std::cout << "==========================================================================\n";
     // Testes manuais para os casos que geraram stack overflow
+    vetorOrdenado = GeradorVetor::gerarVetorCrescente(20000);;
+    vetorInverso = GeradorVetor::gerarVetorDecrescente(20000);;
+    vetoresAleatorios = gerarVetorDeVetores(20000, GeradorVetor::gerarVetorAleatorio);
+    vetoresQuaseOrd = gerarVetorDeVetores(20000, GeradorVetor::gerarVetorQuaseOrdenado);
     std::cout << "Vetor aleatorio - Bubble Sort - TAM: 20000\n";
     testarAlgoritmoEmCenario(Ordenacao::bubbleSort, "Bubble Sort", 20000, "Vetor aleatorio");
     std::cout << "Vetor quase ordenado - Bubble Sort - TAM: 20000\n";
@@ -166,25 +174,21 @@ void Gerenciador::testarAlgoritmoEmCenario(const std::function<void(std::vector<
     if (cenario == "Vetor Ordenado")
     {
         std::cout << cenario << " -- TAM: " << tam << " -- " << std::endl;
-        vetorOrdenado = GeradorVetor::gerarVetorCrescente(tam);
         rodar10vzsMesmoVetor(algoritmo, vetorOrdenado, cenario, nomeAlgoritmo);
     }
     else if (cenario == "Vetor Inversamente Ordenado")
     {
         std::cout << cenario << " -- TAM: " << tam << " -- " << std::endl;
-        vetorInverso = GeradorVetor::gerarVetorDecrescente(tam);
         rodar10vzsMesmoVetor(algoritmo, vetorInverso, cenario, nomeAlgoritmo);
     }
     else if (cenario == "Vetor aleatorio")
     {
         std::cout << cenario << " -- TAM: " << tam << " -- " << std::endl;
-        vetoresAleatorios = gerarVetorDeVetores(tam, GeradorVetor::gerarVetorAleatorio);
         testarVetoresAleatorios(algoritmo, vetoresAleatorios, cenario, nomeAlgoritmo);
     }
     else if (cenario == "Vetor quase ordenado")
     {
         std::cout << cenario << " -- TAM: " << tam << " -- " << std::endl;
-        vetoresQuaseOrd = gerarVetorDeVetores(tam, GeradorVetor::gerarVetorQuaseOrdenado);
         testarVetoresAleatorios(algoritmo, vetoresQuaseOrd, cenario, nomeAlgoritmo);
     }
     else
