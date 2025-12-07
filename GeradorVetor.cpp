@@ -27,7 +27,7 @@ std::vector<int> GeradorVetor::gerarVetorAleatorio(int tamanho)
     std::vector<int> vetor(tamanho);
     std::random_device seed; // usado para gerar uma seed pro gerador, para iniciar
     static std::mt19937 gerador(seed()); // gerador de numeros aleatorios
-    std::uniform_int_distribution<> intervalo(0, tamanho - 1); // distribuicao uniforme entre 0 e tamanho
+    std::uniform_int_distribution<> intervalo(0, tamanho); // distribuicao uniforme entre 0 e tamanho
 
     for (int &num : vetor)
     {
@@ -43,7 +43,7 @@ std::vector<int> GeradorVetor::gerarVetorQuaseOrdenado(int tamanho)
     std::vector<int> vetor = gerarVetorCrescente(tamanho);
     std::random_device seed;
     static std::mt19937 gerador(seed());
-    std::uniform_int_distribution<> intervalo(0, tamanho - 1);
+    std::uniform_int_distribution<> intervalo(0, tamanho);
 
     int numTrocas = tamanho / 10; // 10% dos elementos vao ser trocados para bagunçar o vetor
     for (int i = 0; i < numTrocas; i++)
