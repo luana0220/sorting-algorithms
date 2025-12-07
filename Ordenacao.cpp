@@ -1,5 +1,10 @@
 #include "Ordenacao.hpp"
 #include <chrono>
+#include <random>
+
+std::random_device rd;
+std::mt19937 gen(rd());
+
 
 // inicialização dos contadores
 long long Ordenacao::trocas = 0;
@@ -17,6 +22,9 @@ void Ordenacao::troca(int &a, int &b)
 // metodos privados quick Sort Lomuto
 int Ordenacao::particionaLomuto(std::vector<int> &vec, int inicio, int fim)
 {
+    std::uniform_int_distribution<> intervalo (inicio, fim);
+    int Indpivo = intervalo(gen); // sorteia um indice para o pivô aleatório para ajudar nos piores casos
+    troca(vec[fim], vec[Indpivo]); // coloca o pivô na posição final para usar o método de Lomuto
     int pivo = vec[fim]; // pivô é o último elemento
     int i = inicio - 1;
     for (int j = inicio; j < fim; j++)
@@ -138,7 +146,7 @@ void Ordenacao::merge(std::vector<int> &vec, int esq, int meio, int dir)
     // Merge das duas metades
     while (i < tam1 && j < tam2)
     {
-        comparacoes++; // comparação L[i] <= R[j]
+        comparacoes++; // comparação subL[i] <= subR[j]
 
         // procura o menor valor entre os primeiros elementos de cad sub vetor
         if (subL[i] <= subR[j])
@@ -163,7 +171,7 @@ void Ordenacao::merge(std::vector<int> &vec, int esq, int meio, int dir)
         k++;
     }
 
-    // Copia resto de R
+    // Copia resto de subR
     while (j < tam2)
     {
         vec[k] = subR[j];
@@ -203,6 +211,9 @@ void Ordenacao::medirTempo(std::function<void(std::vector<int> &)> funcaoOrdenac
 int Ordenacao::particionaHoare(std::vector<int> &vec, int inicio, int fim)
 {
     // escolhe elemento incial como pivo
+    std::uniform_int_distribution<> intervalo (inicio, fim);
+    int Indpivo = intervalo(gen); // sorteia um indice para o pivô aleatório para ajudar nos piores casos
+    troca(vec[inicio], vec[Indpivo]); // coloca o pivô na posição inicial paar usar o método de Hoare
     int pivo = vec[inicio];
     int i = inicio - 1;
     int j = fim + 1;
